@@ -3,11 +3,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { 
   Users, 
-  FileText, 
-  Calendar, 
-  DollarSign, 
-  BarChart, 
-  Settings,
+  FileText,
   Menu,
   X
 } from 'lucide-react';
@@ -17,13 +13,8 @@ export function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   
   const navigation = [
-    { name: 'Dashboard', href: '/', icon: BarChart },
+    { name: 'Inicio', href: '/', icon: FileText },
     { name: 'Hermanos', href: '/hermanos', icon: Users },
-    { name: 'Cuotas', href: '/cuotas', icon: FileText },
-    { name: 'Donaciones', href: '/donaciones', icon: DollarSign },
-    { name: 'Eventos', href: '/eventos', icon: Calendar },
-    { name: 'Estadísticas', href: '/estadisticas', icon: BarChart },
-    { name: 'Configuración', href: '/configuracion', icon: Settings },
   ];
 
   const toggleSidebar = () => {
